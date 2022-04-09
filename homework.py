@@ -52,8 +52,8 @@ class CashCalculator(Calculator):
         RUB_RATE= 1
         currencies={
         'rub': (RUB_RATE, 'руб'),
-        'usd': (USD_RATE, 'USD'),
-        'eur': (EUR_RATE, 'Euro')
+        'usd': (USD_RATE, 'usd'),
+        'eur': (EUR_RATE, 'eur')
         }
         today_cash=round(self.get_today_stats()/currencies[currency],2)
         if self.limit>today_cash:
